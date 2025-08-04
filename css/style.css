@@ -540,13 +540,19 @@ main .container{
   border-radius:8px;
   padding: 0;
 }
+.templats .cards .card .text__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+ 
 .templats .cards .card .text__right ul {
  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100%;
-  text-align: center;
 }
 .templats .cards .card .text__right ul li{
    padding: 10px 0;
@@ -576,8 +582,20 @@ main .container{
   font-size: 18px;
 }
 .templats .cards .card{
-  height: 100%;
+  grid-template-columns: 1fr; 
 }
+
+.templats .cards .card .text__right ul {
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+  .templats img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 /* footer */
 footer{
